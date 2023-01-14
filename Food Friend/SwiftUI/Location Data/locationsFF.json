@@ -1,0 +1,56 @@
+[
+    {
+        "id" : "FoodBank",
+        "name" : "FoodBank",
+        "image" : "",
+        "latitude" : 1.31117,
+        "longitude" : 103.74853,
+        "address" : "218 Pandan Loop",
+        "website" : "https://foodbank.sg"
+    },
+    {
+        "id" : "FFTH",
+        "name" : "Food From The Heart",
+        "image" : "",
+        "latitude" : 1.33751,
+        "longitude" : 103.88291,
+        "address" : "130 Joo Seng Rd",
+        "website" : "https://www.foodfromtheheart.sg"
+    },
+    {
+        "id" : "chobe",
+        "name" : "Chobe National Park",
+        "image" : "",
+        "latitude" : -18.7305642,
+        "longitude" : 24.4292148,
+        "address" : "abc drive king kong africa",
+        "website" : "https://apple.com"
+    },
+    {
+        "id" : "kidepo",
+        "name" : "Kidepo Valley National Park",
+        "image" : "",
+        "latitude" : 3.8495757,
+        "longitude" : 33.7525049,
+        "address" : "abc drive king kong africa",
+        "website" : "https://apple.com"
+    },
+    {
+        "id" : "etosha",
+        "name" : "Etosha National Park",
+        "image" : "",
+        "latitude" : -18.8555909,
+        "longitude" : 16.327131,
+        "address" : "abc drive king kong africa",
+        "website" : "https://apple.com"
+    },
+    {
+        "id" : "solonga",
+        "name" : "Solonga National Park",
+        "image" : "",
+        "latitude" : -1.9999932,
+        "longitude" : 21.0002492,
+        "address" : "abc drive king kong africa",
+        "website" : "https://apple.com"
+    }
+]

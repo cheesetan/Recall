@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  Food Friend
+//  Recall
 //
-//  Created by Tristan on 22/8/22.
+//  Created by Tristan on 7/7/22.
 //
 
 import UIKit
@@ -11,11 +11,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
+    private(set) static var shared: SceneDelegate?
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        
+        Self.shared = self
+                
+        UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }.forEach { windowScene in
+            windowScene.sizeRestrictions?.minimumSize = CGSize(width: 600, height: 1000)
+            windowScene.sizeRestrictions?.maximumSize = CGSize(width: 600, height: 1000)
+        }
+        
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 
@@ -25,7 +33,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Release any resources associated with this scene that can be re-created the next time the scene connects.
         // The scene may re-connect later, as its session was not necessarily discarded (see `application:didDiscardSceneSessions` instead).
     }
-
+    
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        print("pineapples")
+    }
+    
     func sceneDidBecomeActive(_ scene: UIScene) {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.

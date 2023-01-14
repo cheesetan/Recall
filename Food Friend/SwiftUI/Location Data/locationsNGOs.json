@@ -1,0 +1,47 @@
+[
+    {
+        "id" : "FoodBank",
+        "name" : "FoodBank",
+        "image" : "FoodBank",
+        "latitude" : 1.31117,
+        "longitude" : 103.74853,
+        "address" : "218 Pandan Loop",
+        "website" : "https://foodbank.sg"
+    },
+    {
+        "id" : "FFTH",
+        "name" : "Food From The Heart",
+        "image" : "FFTH",
+        "latitude" : 1.33751,
+        "longitude" : 103.88291,
+        "address" : "130 Joo Seng Rd",
+        "website" : "https://www.foodfromtheheart.sg"
+    },
+    {
+        "id" : "FFFA",
+        "name" : "Free Food For All",
+        "image" : "FFFA",
+        "latitude" : 1.32734,
+        "longitude" : 103.91816,
+        "address" : "28 Senang Crescent",
+        "website" : "https://www.freefood.org.sg"
+    },
+    {
+        "id" : "WH",
+        "name" : "Willing Hearts",
+        "image" : "WH",
+        "latitude" : 1.31352,
+        "longitude" : 103.90702,
+        "address" : "1 Lorong J Telok Kurau",
+        "website" : "https://willinghearts.org.sg"
+    },
+    {
+        "id" : "RMHC",
+        "name" : "Ronald Mcdonald House Charities",
+        "image" : "RMHC",
+        "latitude" : 1.29571,
+        "longitude" : 103.78326,
+        "address" : "5 Lower Kent Ridge Rd",
+        "website" : "https://rmhc.sg"
+    }
+]

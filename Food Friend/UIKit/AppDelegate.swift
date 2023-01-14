@@ -1,20 +1,21 @@
 //
 //  AppDelegate.swift
-//  Food Friend
+//  Recall
 //
-//  Created by Tristan on 22/8/22.
+//  Created by Tristan on 7/7/22.
 //
 
 import UIKit
+import FirebaseCore
 import CoreData
 
-@main
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+@UIApplicationMain
+    class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        FirebaseApp.configure()
         return true
     }
 
@@ -34,14 +35,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Core Data stack
 
-    lazy var persistentContainer: NSPersistentCloudKitContainer = {
+    lazy var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
          creates and returns a container, having loaded the store for the
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentCloudKitContainer(name: "Food_Friend")
+        let container = NSPersistentContainer(name: "Food_Friend")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
